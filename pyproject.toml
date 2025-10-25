@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "betz-poetry-sample"
+version = "1.0.0"
+description = "Boilerplate CLI package"
+authors = ["Benjamin West <ben.west.500@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.3.3"
+
+[tool.poetry.scripts]
+utils-cli = "src.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
